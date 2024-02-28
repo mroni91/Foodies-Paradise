@@ -1,0 +1,265 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 70px; /* Space for sticky navbar */
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed; /* Sticky position */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure it's above other items */
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ddd;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    background: #fff;
+    margin: 80px auto 20px; /* Adjust top margin to see content below nav */
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Menu Grid */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.menu-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-item h3 {
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.menu-item p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Price Styling */
+.price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #666;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    margin-top: 2rem;
+}
+
+.contact-form form {
+    padding: 2rem;
+    background: #f7f7f7;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="date"],
+.contact-form input[type="time"],
+.contact-form input[type="number"],
+.contact-form input[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+}
+
+.contact-form input[type="submit"] {
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Add this to the top of your CSS file */
+.banner {
+    background-image: url('./images/blackburger.jpg'); /* Update with the correct path */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Adjust based on your preference */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Ensure that the .banner-text is visible and readable over the background */
+.banner-text {
+    background: rgba(255, 255, 255, 0.7); /* This makes the text area slightly transparent */
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* Update the link color for better visibility if needed */
+.menu-preview ul li {
+    color: #000; /* Or any color that fits the design */
+}
+
+/* Ensure the button is styled appropriately */
+.btn {
+    background-color: #333; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Featured Items Styling */
+.menu-preview {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    margin: 30px auto; /* Centers the container */
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%; /* Or adjust to your preference */
+    max-width: 400px; /* Or adjust to your preference */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.menu-preview h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; /* Center align the title */
+}
+
+.menu-preview ul {
+    list-style-type: none; /* Removes default list styling */
+    padding: 0;
+    margin-bottom: 20px; /* Adds space below the list */
+}
+
+.menu-preview ul li {
+    font-size: 1.1rem; /* Increase font size */
+    color: #333;
+    padding: 8px 0; /* Adds space above and below each item */
+    border-bottom: 1px solid #ddd; /* Adds a separator line */
+}
+
+.menu-preview ul li:last-child {
+    border-bottom: none; /* Removes the bottom border for the last item */
+}
+
+.menu-preview .btn {
+    display: block; /* Makes the button take the full width of its container */
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px; /* Adds space above the button */
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center; /* Centers the text inside the button */
+    transition: background-color 0.3s ease;
+}
+
+.menu-preview .btn:hover {
+    background-color: #555;
+}
