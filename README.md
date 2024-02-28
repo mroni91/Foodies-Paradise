@@ -33,7 +33,7 @@ We pride ourselves not just on the quality of our food but also on the elegance 
 To run this website locally, you'll need to clone the repository and open the `index.html` file in your browser.
 
 ```
-git clone https://github.com/yourusername/foodiesparadise.git
+git clone https://github.com/mroni91/Foodies-Paradise
 cd foodiesparadise
 open index.html
 ```
